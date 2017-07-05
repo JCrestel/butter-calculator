@@ -1,0 +1,50 @@
+<link rel="import" href="bower_components/polymer/polymer-element.html">
+<link rel="import" href="bower_components/paper-button/paper-button.html">
+
+<!--
+`<butter-calculator>` is Description
+
+@element ButterCalculator
+-->
+<dom-module id="butter-calculator">
+    <template>
+        <style>
+            :host {
+                display: block
+            }
+        </style>
+
+        <p>butter calculator</p>
+        <span id='display'></span>
+        <paper-button raised on-click="_display">=</paper-button>
+        <paper-button raised on-click="_display">+</paper-button>
+        <paper-button raised on-click="_display">-</paper-button>
+        <paper-button raised on-click="_display">0</paper-button>
+        <paper-button raised on-click="_display">1</paper-button>
+        <paper-button raised on-click="_display">2</paper-button>
+        <paper-button raised on-click="_display">3</paper-button>
+        <paper-button raised on-click="_display">4</paper-button>
+        <paper-button raised on-click="_display">5</paper-button>
+        <paper-button raised on-click="_display">6</paper-button>
+        <paper-button raised on-click="_display">7</paper-button>
+        <paper-button raised on-click="_display">8</paper-button>
+        <paper-button raised on-click="_display">9</paper-button>
+    </template>
+
+    <script>
+        class ButterCalculator extends Polymer.Element {
+
+            static get is() { return 'butter-calculator'; }
+
+            static get properties() {
+                return {                    
+                };
+            }
+
+            _display(e) {
+                this.$.display.textContent = this.$.display.textContent + e.target.textContent;
+            }
+        }
+        window.customElements.define(ButterCalculator.is, ButterCalculator);
+    </script>
+</dom-module>

@@ -1,0 +1,27 @@
+{
+  "name": "butter-calculator",
+  "homepage": "https://github.com/JCrestel/butter-calculator",
+  "authors": [
+    "Jérémy Crestel <j.crestel@gmail.com>"
+  ],
+  "description": "Simple calculator",
+  "main": "butter-calculator.html",
+  "keywords": [
+    "butter",
+    "calcultator"
+  ],
+  "license": "Apache 2.0",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer" : "Polymer/polymer#^2.0.1",
+    "webcomponentsjs"  :"webcomponents/webcomponentsjs#v1.0.0",
+    "paper-button": "PolymerElements/paper-button#v2.0.0",
+    "paper-card": "PolymerElements/paper-card#v2.0.0"
+  }
+}
