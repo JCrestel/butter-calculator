@@ -10,25 +10,56 @@
     <template>
         <style>
             :host {
-                display: block
+                display: block;
             }
+
+            .wrapper{
+                display: grid;
+                width: 100px;
+            }
+
+            .clean{     grid-column: 1; grid-row: 1;}
+            .division{  grid-column: 2; grid-row: 1;}
+            .multiplier{grid-column: 3; grid-row: 1;}
+            .back{      grid-column: 4; grid-row: 1;}
+            .seven{     grid-column: 1; grid-row: 2;}
+            .height{    grid-column: 2; grid-row: 2;}
+            .nine{      grid-column: 3; grid-row: 2;}
+            .minus{     grid-column: 4; grid-row: 2;}
+            .four{      grid-column: 1; grid-row: 3;}
+            .five{      grid-column: 2; grid-row: 3;}
+            .six{       grid-column: 3; grid-row: 3;}
+            .plus{      grid-column: 4; grid-row: 3;}
+            .one{       grid-column: 1; grid-row: 4;}
+            .two{       grid-column: 2; grid-row: 4;}
+            .three{     grid-column: 3; grid-row: 4;}
+            .zero{      grid-column: 2; grid-row: 5;}
+            .equal{     grid-column: 4; grid-row: 4/6;}
+
         </style>
 
         <p>butter calculator</p>
         <span id='display'></span>
-        <paper-button raised on-click="_display">=</paper-button>
-        <paper-button raised on-click="_display">+</paper-button>
-        <paper-button raised on-click="_display">-</paper-button>
-        <paper-button raised on-click="_display">0</paper-button>
-        <paper-button raised on-click="_display">1</paper-button>
-        <paper-button raised on-click="_display">2</paper-button>
-        <paper-button raised on-click="_display">3</paper-button>
-        <paper-button raised on-click="_display">4</paper-button>
-        <paper-button raised on-click="_display">5</paper-button>
-        <paper-button raised on-click="_display">6</paper-button>
-        <paper-button raised on-click="_display">7</paper-button>
-        <paper-button raised on-click="_display">8</paper-button>
-        <paper-button raised on-click="_display">9</paper-button>
+        <span id='result'></span>
+        <div class="wrapper">
+            <paper-button raised on-click="" class="clean">c</paper-button>
+            <paper-button raised on-click="_display" class="division">/</paper-button>
+            <paper-button raised on-click="_display" class="multiplier">*</paper-button>
+            <paper-button raised on-click="" class="back">k</paper-button>
+            <paper-button raised on-click="_display" class="seven">7</paper-button>
+            <paper-button raised on-click="_display" class="height">8</paper-button>
+            <paper-button raised on-click="_display" class="nine">9</paper-button>
+            <paper-button raised on-click="_display" class="four">4</paper-button>
+            <paper-button raised on-click="_display" class="five">5</paper-button>
+            <paper-button raised on-click="_display" class="six">6</paper-button>
+            <paper-button raised on-click="_display" class="zero">0</paper-button>
+            <paper-button raised on-click="_display" class="one">1</paper-button>
+            <paper-button raised on-click="_display" class="two">2</paper-button>
+            <paper-button raised on-click="_display" class="three">3</paper-button>
+            <paper-button raised on-click="_display" class="equal">=</paper-button>
+            <paper-button raised on-click="_display" class="plus">+</paper-button>
+            <paper-button raised on-click="_display" class="minus">-</paper-button>
+        </div>
     </template>
 
     <script>
