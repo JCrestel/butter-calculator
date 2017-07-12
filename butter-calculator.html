@@ -82,18 +82,18 @@
             }
 
             _clearDisplay(){
-                this.display = "";
-                this.result = "";
+                this.display = '';
+                this.result = '';
             }
             
             _equalDisplay(){
-                this.display = "";
+                this.display = '';
             }
 
             _displayChanged(newValue, oldValue) {
                 
                 if(newValue){
-                    this.result = Number(this.display);
+                    this.result = eval(this.display);
                 }
             }
         }
